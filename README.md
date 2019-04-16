@@ -1,6 +1,6 @@
 # VIDE (VeChain-IDE)
 
-VIDE is a browser-based compiler and IDE that enables users to build **VeChainThor contracts with Solidity language** and to debug transactions.
+VIDE is a browser-based compiler and IDE that enables users to build **VeChainThor contracts with Solidity language** and to debug transactions. (VIDE "Beta version" is developed based on Remix)
 
 To try it out, visit [https://vechainstore.com/ide](https://vechainstore.com/ide).
 
