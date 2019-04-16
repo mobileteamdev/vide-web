@@ -17,7 +17,7 @@ import sys
 
 # -- Project information -----------------------------------------------------
 
-project = 'vide'
+project = 'VIDE, VeChain-IDE'
 copyright = '2019, mobileteamdev'
 author = 'mobileteamdev'
 

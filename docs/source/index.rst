@@ -1,29 +1,31 @@
-Welcome to Remix documentation!
+Welcome to VIDE documentation!
 ===============================
 
-Remix is a powerful, open source tool that helps you write Solidity contracts straight from the browser.
-Written in JavaScript, Remix supports both usage in the browser and locally.
+VIDE "Beta version" is developed based on Remix
+VIDE is a powerful, open source tool that helps you write Solidity contracts straight from the browser.
+Written in JavaScript, VIDE supports usage in the browser.
 
-Remix also supports testing, debugging and deploying of smart contracts and much more.
+VIDE also supports testing, debugging and deploying of smart contracts and much more.
 
-Our Remix project with all its features is available
-at `remix.ethereum.org <http://remix.ethereum.org>`__ and more information can be found in these
-docs.  Our IDE tool is available at `our GitHub repository
-<https://github.com/ethereum/remix-ide>`__.
+Our VIDE project with all its features is available 
+at `vechainstore.com/ide <https://vechainstore.com/ide>`__ and more information can be found in these docs. Our IDE tool is available at `our GitHub repository
+<https://github.com/mobileteamdev/vide-web>`__.
 
-This set of documents covers instructions on how to use Remix and some tutorials to help you get started.
+This set of documents covers instructions on how to use VIDE and some tutorials to help you get started.
 
 Useful links:
 
 - `Solidity documentation <https://solidity.readthedocs.io>`__
 
-- `Remix alpha <http://remix-alpha.ethereum.org>`__ - The version where we test new Remix release (not stable!).
+- `VeChain GitHub repository <https://github.com/vechain>`__
 
-- `Ethereum StackExchange for Remix <https://ethereum.stackexchange.com/questions/tagged/remix>`__
+- `VeChain community channel (Reddit) <https://www.reddit.com/r/vechain>`__
 
-- `Community support channel <https://gitter.im/ethereum/remix>`__
+- `VeChain community channel (Twitter) <https://twitter.com/vechainofficial>`__
 
-- `Ðapp Developer resources (Ethereum wiki) <https://github.com/ethereum/wiki/wiki/Dapp-Developer-Resources>`__
+- `VeChain community channel (Medium) <https://medium.com/@vechainofficial>`__
+
+- `VIDE support channel (Discord) <https://discord.gg/8PxeXNa>`__
 
 
 .. toctree::
@@ -48,7 +50,7 @@ Useful links:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Other Remix features
+   :caption: Other VIDE features
 
    file_explorer
    debugger_tab
@@ -59,9 +61,8 @@ Useful links:
    :maxdepth: 2
    :caption: Tutorials and workshops
 
-   workshop_Building_smart_contracts_with_Remix
+   workshop_Building_smart_contracts_with_VIDE
    tutorial_eattheblock
-   tutorial_remixd_filesystem
    tutorial_debug
    tutorial_import
    tutorial_mist
