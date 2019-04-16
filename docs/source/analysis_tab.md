@@ -7,7 +7,7 @@ new analysis is run at each compilation.
 The analysis tab gives detailed information about the contract code. It
 can help you avoid code mistakes and to enforce best practices.
 
-![image](images/remix_analysistab.png)
+![image](images/VIDE_analysistab.png)
 
 Here is the list of analyzers:
 

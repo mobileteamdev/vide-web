@@ -1,12 +1,12 @@
 Compiling contracts
 ===================
 
-By default Remix triggers a compilation each time the current file is
+By default VIDE triggers a compilation each time the current file is
 changed or another file is selected. If the contract has a lot of
 dependencies and takes a long time to compile, it is possible to disable
 the autocompilation.
 
-![image](images/remix_compiletab.png)
+![image](images/VIDE_compiletab.png)
 
 After each compilation, a list is updated with all the newly compiled
 contracts.
@@ -25,4 +25,4 @@ using the bzz URL located in the details modal dialog `SWARM LOCATION`.
 Compilation Errors and Warning are displayed below the contract section.
 At each compilation, the static analysis tab builds a report. It is very
 valuable when addressing reported issues even if the compiler doesn't
-complain. ([see more](http://remix.readthedocs.io/en/latest/analysis_tab.html))
+complain. ([see more](http://vide.readthedocs.io/en/latest/analysis_tab.html))

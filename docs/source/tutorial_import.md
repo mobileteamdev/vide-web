@@ -12,7 +12,7 @@ For a detailed explanation of the `import` keyword see the
 Importing a local file
 ----------------------
 
-Other files in Remix can be imported just by specifying their path.
+Other files in VIDE can be imported just by specifying their path.
 Please use ./ for relative paths to increase portability.
 
 ![image](tuto_basicimport.png)

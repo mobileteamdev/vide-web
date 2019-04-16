@@ -3,7 +3,7 @@ Settings
 
 This section displays the current compiler version and allows one to change to another version.
 
-![image](images/remix_settingstab.png)
+![image](images/VIDE_settingstab.png)
 
 Another important settings:
 

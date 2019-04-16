@@ -1,7 +1,7 @@
 Welcome to VIDE documentation!
 ===============================
 
-VIDE "Beta version" is developed based on Remix
+VIDE "Beta version" is developed based on Remix.
 VIDE is a powerful, open source tool that helps you write Solidity contracts straight from the browser.
 Written in JavaScript, VIDE supports usage in the browser.
 
@@ -35,7 +35,6 @@ Useful links:
    packages
    solidity_editor
    compile_tab
-   quickstart_javascript_vm
    settings_tab
 
 
@@ -46,7 +45,6 @@ Useful links:
    run_tab
    udapp
    contract_metadata
-   unittesting_tab
 
 .. toctree::
    :maxdepth: 2
@@ -61,16 +59,12 @@ Useful links:
    :maxdepth: 2
    :caption: Tutorials and workshops
 
-   workshop_Building_smart_contracts_with_VIDE
-   tutorial_eattheblock
    tutorial_debug
    tutorial_import
-   tutorial_mist
 
 .. toctree::
    :maxdepth: 2
    :caption: Code contribution guide
 
    code_contribution_guide
-   Community
    support_tab

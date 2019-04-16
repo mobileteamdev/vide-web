@@ -1,9 +1,9 @@
-Support tab in Remix
+Support tab in VIDE
 ======================
 
-This section provides a link to Remix Issues where users can report a
+This section provides a link to VIDE Issues where users can report a
 bug or suggest a feature, as well as providing other useful links. It
-also displays a [Remix support
-channel](http://gitter.im/ethereum/remix)
+also displays a [VIDE support
+channel](https://discord.gg/8PxeXNa)
 
-![image](images/remix_supporttab.png)
+![image](images/VIDE_supporttab.png)

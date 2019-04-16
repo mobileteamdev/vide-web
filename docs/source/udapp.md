@@ -11,7 +11,7 @@ value of the function.
 
 -   The called function has no special keywords. The action has a
 light red background, clicking on does create a new transaction.
-But this transaction cannot accept any amount of Ether.
+But this transaction cannot accept any amount of VET.
 
 -   The called function is declared as `payable` in Solidity. The
 action has a red background, clicking it does create a new
