@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!--
+		The MIT License (MIT)
+
+		Copyright (c) 2014, 2015, the individual contributors
+
+		Permission is hereby granted, free of charge, to any person obtaining a copy
+		of this software and associated documentation files (the "Software"), to deal
+		in the Software without restriction, including without limitation the rights
+		to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+		copies of the Software, and to permit persons to whom the Software is
+		furnished to do so, subject to the following conditions:
+
+		The above copyright notice and this permission notice shall be included in
+		all copies or substantial portions of the Software.
+
+		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+		IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+		FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+		AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+		LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+		OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+		THE SOFTWARE.
+		-->
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<title>VIDE - Solidity IDE</title>
+		<link rel="stylesheet" href="assets/css/pygment_trac.css">
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		<link rel="icon" type="x-icon" href="icon.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <style>a{color: #7d99f1;}</style>
+	</head>
+	<body>
+        <script>
+			//window.blockPlatform = 2;
+			window.fixedLatestRelease = "0.5.4";
+			window.ideNamespace = "vide";
+			const MAIN_NET_ID = "0x00000000851caf3cfdb6e899cf5958bfb1ac3413d346d43539627e6be7ec1b4a";
+			const TEST_NET_ID = "0x000000000b2bce3c70bc649a02749e8687721b09ed2e15997f466536b20bb127";
+			var NETWORK_ID = 0;//0: not connex, 1: Mainnet, 2: Testnet
+			function getNetwork () {
+				if(window.connex && connex.thor.genesis){
+					if(connex.thor.genesis.id == MAIN_NET_ID){
+						NETWORK_ID = 1;
+					} else if(connex.thor.genesis.id == TEST_NET_ID){
+						NETWORK_ID = 2;
+					} else{
+						NETWORK_ID = 3;
+					}
+				}
+				return NETWORK_ID;
+			}
+        </script>
+		<script src="build/app.js"></script>
+	</body>
+</html>

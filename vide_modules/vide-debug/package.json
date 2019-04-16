@@ -1,0 +1,122 @@
+{
+  "_from": "remix-debug@0.2.14",
+  "_id": "remix-debug@0.2.14",
+  "_inBundle": false,
+  "_integrity": "sha512-2fzxYMAEk7rE+ZTjO1p2f3loT7W/CTTduuOkOzfuUmWsISHgY5XgRQwu8bki53O5tSePnZMVhIFbnLKx0r1qGA==",
+  "_location": "/remix-debug",
+  "_phantomChildren": {
+    "bn.js": "4.11.8",
+    "create-hash": "1.2.0",
+    "keccakjs": "0.2.3",
+    "rlp": "2.2.2",
+    "secp256k1": "3.6.2"
+  },
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "remix-debug@0.2.14",
+    "name": "remix-debug",
+    "escapedName": "remix-debug",
+    "rawSpec": "0.2.14",
+    "saveSpec": null,
+    "fetchSpec": "0.2.14"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/remix-debug/-/remix-debug-0.2.14.tgz",
+  "_shasum": "19f15140df2ab9d4638b925c746fff05beda426a",
+  "_spec": "remix-debug@0.2.14",
+  "_where": "C:\\Users\\kang\\AppData\\Roaming\\npm\\node_modules\\remix-ide",
+  "author": {
+    "name": "cpp-ethereum team"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "plugins": [
+            [
+              "fast-async",
+              {
+                "runtimePatten": null,
+                "compiler": {
+                  "promises": true,
+                  "es7": true,
+                  "noRuntime": true,
+                  "wrapAwait": true
+                }
+              }
+            ],
+            "transform-object-assign"
+          ]
+        }
+      ],
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015"
+          ]
+        }
+      ]
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/ethereum/remix/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Yann Levreau",
+      "email": "yann@ethdev.com"
+    },
+    {
+      "name": "Liana Husikyan",
+      "email": "liana@ethdev.com"
+    }
+  ],
+  "dependencies": {
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babelify": "^7.3.0",
+    "ethereumjs-util": "^4.5.0",
+    "ethereumjs-vm": "2.4.0",
+    "fast-async": "^6.1.2",
+    "notify-error": "^1.2.0",
+    "npm-run-all": "^4.1.2",
+    "remix-lib": "0.3.13",
+    "solc": "^0.5.0"
+  },
+  "deprecated": false,
+  "description": "Ethereum IDE and tools for the web",
+  "devDependencies": {
+    "standard": "^7.0.1",
+    "standard-reporter": "^1.0.5",
+    "tape": "^4.6.0"
+  },
+  "homepage": "https://github.com/ethereum/remix#readme",
+  "license": "MIT",
+  "main": "./index.js",
+  "name": "remix-debug",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethereum/remix.git"
+  },
+  "scripts": {
+    "build": "mkdirp build; browserify index.js > build/app.js",
+    "lint": "standard | notify-error",
+    "test": "standard && tape ./test/tests.js"
+  },
+  "standard": {
+    "ignore": [
+      "node_modules/*",
+      "build/*",
+      "test/resources/*"
+    ],
+    "parser": "babel-eslint"
+  },
+  "version": "0.2.14"
+}
