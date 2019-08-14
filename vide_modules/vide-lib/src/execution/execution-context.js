@@ -201,7 +201,7 @@ function ExecutionContext () {
   }
 }
 var transactionDetailsLinks = {
-  'Mainnet': 'https://veforge.com/transactions/',
+  'Mainnet': 'https://explore.veforge.com/transactions/',
   'Testnet': 'https://testnet.veforge.com/transactions/',
   'Unknown': 'https://testnet.veforge.com/transactions/'
 }
