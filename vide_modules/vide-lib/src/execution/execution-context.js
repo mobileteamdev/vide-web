@@ -192,18 +192,28 @@ function ExecutionContext () {
       cb(alertMsg)
     }
   }
-  this.setProviderFromEndpoint = setProviderFromEndpoint
+  this.setProviderFromEndpoint = setProviderFromEndpoint;
 
   this.txDetailsLink = function (network, hash) {
-    if (transactionDetailsLinks[network]) {//vide
-      return transactionDetailsLinks[network] + hash
-    }
+	  	var explore = 'insight';
+		var isSync = navigator.userAgent.indexOf(' Sync/')!==-1;
+		if(!isSync && network !== 'Mainnet')explore = 'veforge';
+		if(transactionDetailsLinks[explore][network]) {//vide
+			return transactionDetailsLinks[explore][network] + hash;
+		}
   }
 }
 var transactionDetailsLinks = {
-  'Mainnet': 'https://explore.veforge.com/transactions/',
-  'Testnet': 'https://testnet.veforge.com/transactions/',
-  'Unknown': 'https://testnet.veforge.com/transactions/'
+	'insight':{
+		'Mainnet': 'https://insight.vecha.in/#/txs/',
+		'Testnet': 'https://insight.vecha.in/#/txs/',
+		'Unknown': 'https://insight.vecha.in/#/txs/'
+	},
+	'veforge':{
+		'Mainnet': 'https://explore.veforge.com/transactions/',
+		'Testnet': 'https://testnet.veforge.com/transactions/',
+		'Unknown': 'https://testnet.veforge.com/transactions/'
+	}
 }
 
 module.exports = new ExecutionContext()

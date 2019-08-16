@@ -45,25 +45,26 @@ function runTab (opts, localRegistry) {
       cb(null, $('#txorigin').val())
     },
     getValue: (cb) => {
-      try {
-        var number = document.querySelector('#value').value
-        var select = document.getElementById('unit')
-        var index = select.selectedIndex
-        var selectedUnit = select.querySelectorAll('option')[index].dataset.unit
-        var unit = 'ether' // default
-        if (selectedUnit === 'ether') {
-          unit = 'ether'
-        } else if (selectedUnit === 'finney') {
-          unit = 'finney'
-        } else if (selectedUnit === 'gwei') {
-          unit = 'gwei'
-        } else if (selectedUnit === 'wei') {
-          unit = 'wei'
-        }
-        cb(null, executionContext.web3().toWei(number, unit))
-      } catch (e) {
-        cb(e)
-      }
+		var number = 0;
+		var selectedUnit = null;
+		var unit = 'ether';// default
+		try {
+			number = document.querySelector('#value').value;
+			var select = document.getElementById('unit');
+			var index = select.selectedIndex;
+			selectedUnit = select.querySelectorAll('option')[index].dataset.unit;
+		} catch(e){
+		}
+		if (selectedUnit === 'ether') {
+			unit = 'ether'
+		} else if (selectedUnit === 'finney') {
+			unit = 'finney'
+		} else if (selectedUnit === 'gwei') {
+			unit = 'gwei'
+		} else if (selectedUnit === 'wei') {
+			unit = 'wei'
+		}
+		cb(null, executionContext.web3().toWei(number, unit))
     },
     getGasLimit: (cb) => {
       cb(null, $('#gasLimit').val())
