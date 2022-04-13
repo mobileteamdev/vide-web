@@ -69,7 +69,7 @@
   "description": "Minimalistic browser-based Solidity IDE",
   "devDependencies": {
     "ace-mode-solidity": "^0.1.0",
-    "async": "^2.1.2",
+    "async": "^3.2.2",
     "babel-eslint": "^7.1.1",
     "babel-plugin-transform-object-assign": "^6.22.0",
     "babel-plugin-yo-yoify": "^0.3.3",
